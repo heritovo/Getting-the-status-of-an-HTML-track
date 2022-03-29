@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Getting the status of an HTML track</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   
+  <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
+    <source src="https://mainline.i3s.unice.fr/mooc/elephants-dream-medium.mp4" type="video/mp4">
+    <source src="https://mainline.i3s.unice.fr/mooc/elephants-dream-medium.webm" type="video/webm">
+    <track label="English subtitles" kind="subtitles" srclang="en"
+           src="https://mainline.i3s.unice.fr/mooc/elephants-dream-subtitles-en.vtt" >
+    <track label="Deutsch subtitles" kind="subtitles" srclang="de"
+           src="https://mainline.i3s.unice.fr/mooc/elephants-dream-subtitles-de.vtt" default>
+    <track label="English chapters" kind="chapters" srclang="en"
+           src="https://mainline.i3s.unice.fr/mooc/elephants-dream-chapters-en.vtt">
+ </video>
+  <p>
+  <button onclick=displayTrackStatuses()>Refresh track statuses</button>
+  <div id="trackStatusesDiv">
+    
+    <h3>HTML track descriptions</h3>
+  </div>
+
+<script src="index.js"></script>
+</body> 
+</html>

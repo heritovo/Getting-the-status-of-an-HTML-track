@@ -1,0 +1,14 @@
+* {
+  margin: 16px;
+}
+
+#trackStatusesDiv {
+  border: 1px solid black;
+  margin: 16px;
+  padding: 16px;
+}
+
+video {
+  width: 780px;
+}
+/*# sourceMappingURL=index.css.map */
